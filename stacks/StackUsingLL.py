@@ -39,6 +39,10 @@ class Stack:
             nodeValue=self.LinkedList.head.value
             self.LinkedList.head=self.LinkedList.head.next 
             return nodeValue 
+    def delete(self):
+        self.LinkedList.head=None
+        return("Stack doesn't exist")
+        
             
             
 cs=Stack()
@@ -55,5 +59,6 @@ print('--------------------------------')
 print(cs)
 print('-------------isEmpty---------------')
 print(cs.isEmpty())
+print(cs.delete())
         
     
